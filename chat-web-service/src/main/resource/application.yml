@@ -15,9 +15,11 @@ spring:
   #profiles:
     #active: mybatis
   #配置redis
+  mongodb:
+    uri: mongodb://192.168.15.35:27017/spring-boot
   redis:
     database: 0
-    host: 192.168.31.71
+    host: 192.168.15.35
     port: 6379
     timeout: 0
     password: password
