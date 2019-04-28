@@ -32,9 +32,13 @@ public class ProjectException extends RuntimeException {
 	 */
 	private String detailMsg;
 
-	public ProjectException(String message, Integer code) {
+	public ProjectException(Integer code, String message) {
 		super(message);
 		this.code = code;
+		ResultStatus resultStatus =ResultStatus.DEFINE_ERROR;
+		resultStatus.setCode(code);
+		resultStatus.setMessage(message);
+		this.resultStatus = resultStatus;
 	}
 
 	public ProjectException(ResultStatus resultStatus) {

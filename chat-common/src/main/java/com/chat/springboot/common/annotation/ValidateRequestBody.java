@@ -5,14 +5,16 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 校验application/json请求中 json的数据
- * @author yangyiwei
- * @date 2018年8月6日
- * @time 上午10:35:27
+ * 校验 RequestBody注解的对象
+ * 该注解作用范围仅限于Controller层
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ValidateJSON {
-	
-	public String[] attributes() default {};
+public @interface ValidateRequestBody {
+
+	/**
+	 * 需要校验的属性名称
+	 * @return
+	 */
+	 String[] attributes() default {};
 }

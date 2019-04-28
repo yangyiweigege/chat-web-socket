@@ -715,7 +715,6 @@ public class DateUtils {
 	 * <pre>
 	 * 说   明:  根据传入的时间,得到指定增加后的分数
 	 * @param time
-	 * @param day
 	 * @return
 	 * @throws Exception
 	 * 创建者: 陈    林(Vickey)
@@ -731,7 +730,6 @@ public class DateUtils {
 	 * <pre>
 	 * 说   明:  根据传入的时间,得到指定增加后的秒数
 	 * @param time
-	 * @param day
 	 * @return
 	 * @throws Exception
 	 * 创建者: 陈    林(Vickey)
@@ -1150,8 +1148,7 @@ public class DateUtils {
 
 	/**
 	 * 两个时间比较
-	 * 
-	 * @param date
+	 *
 	 * @return 0:表示时间日期相同 1:表示日期1>日期2 -1:表示日期1<日期2
 	 */
 	public static int compareDateWithNow(Date date1, Date date2)

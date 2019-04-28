@@ -45,8 +45,15 @@ public enum ResultStatus {
 	 * 令牌校验
 	 */
 	TOKEN_IS_NULL("请求令牌为空,请登录后再试", InnerCode.getIncrmentI()),
-	TOKEN_IS_INVALID("请求令牌无效或者过期,请登录后再试", InnerCode.getIncrmentI())
+	TOKEN_IS_INVALID("请求令牌无效或者过期,请登录后再试", InnerCode.getIncrmentI()),
+
+	/**
+	 * 调用第三方服务
+	 */
+	INVOKE_REMOTOE_FAIL("调用远程服务失败!", InnerCode.getIncrmentI()),
+	MICRO_SERVICE_DIED("暂时没有可用的服务", InnerCode.getIncrmentI()),
 	;
+
 	/**
 	 * 消息
 	 */
