@@ -25,7 +25,7 @@ import cn.afterturn.easypoi.excel.entity.enmus.ExcelType;
  * Excel导入/导出 工具类
  * Created by zhuqq
  */
-public class ExcelUtil {
+public class  ExcelUtil {
     public static void exportExcel(List<?> list, String title, String sheetName, Class<?> pojoClass, String fileName,
                                    boolean isCreateHeader, HttpServletResponse response, HttpServletRequest request){
         ExportParams exportParams = new ExportParams(title, sheetName);
